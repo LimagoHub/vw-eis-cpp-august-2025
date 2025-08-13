@@ -11,13 +11,13 @@ int main()
     Schwein babe;
 
     piggy.setName("Miss Piggy");
-    
+    piggy.print();
 
-    std::cout << 
+    /*std::cout <<
         "Dieses Schwein heisst " 
         << piggy.getName()
         << " und wiegt " 
-        << piggy.getGewicht();
+        << piggy.getGewicht();*/
         
 }
 
