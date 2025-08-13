@@ -6,21 +6,33 @@
 
 
 class Stapel {
-public:
-    Stapel() {}
+private:
+    int data[10];
+    int index;
 
-    void push(int value){
+public:
+    Stapel() {
+        index = 0;
+        for (int i = 0; i < 10; ++i) {
+            data[i]  = 0;
+        }
+    }
+
+    void push(int value){ 
+        if(isFull()) return;
+        data[index++] = value;
 
     }
     int pop() {
-        return 0;
+        if(isEmpty()) return 0;
+        return data[--index];
     }
 
     bool isEmpty() {
-        return true;
+        return index == 0;
     }
 
     bool isFull() {
-        return true;
+        return index == 10;
     }
 };

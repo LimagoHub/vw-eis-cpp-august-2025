@@ -2,6 +2,14 @@
 #include "Stapel.h"
 int main() {
 
+
+    int a = 1;
+    int b = 1;
+
+    int c = a+++b;
+
+    std::cout << a << " " << b << " " << c << std::endl;
+
     Stapel myStapel;
 
     for (int i =0; i < 10 ; i++){
