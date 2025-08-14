@@ -4,7 +4,7 @@
 
 #pragma once
 
-
+#include <iostream>
 #include <ostream>
 
 class Punkt {
@@ -27,13 +27,16 @@ private:
     }
 
 public:
-    Punkt(double startX=0, double startY=0) {
+    Punkt(double startX=5, double startY=5) {
         setX(startX);
         setY(startY);
 
     }
 
 
+    virtual void print() {
+        std::cout << "X: " << x << ", Y: " << y << std::endl;
+    }
 
     /*void rechts() {
         setX(getX() + 1);
