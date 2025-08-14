@@ -22,11 +22,18 @@ public:
     }
 private:
     void spielerzug() {
-        // Eingabe
-        // wert lesen
-        // Eingabe abziehen
+        int zug;
+        while(true) {
+            std::cout << "Es gibt " << steine << " Steine. Bitte nehmen Sie 1, 2 oder 3!\n";
+            std::cin >> zug;
+            if(zug >=1 && zug <=3) break;
+            std::cout << "Ungueltiger Zug\n";
+        }
+        steine -= zug;
     }
     void computerzug() {
-        std::cout << "Computerzug" << std::endl;
+        // Hat Spieler verloren -> steine < 1 dann return (spielende = true)
+        // hat computer verloren -> Steine == 1 dann return (spielende = true)
+        // Regel gemaess Flipchart
     }
 };

@@ -85,11 +85,16 @@
       <option name="presentableId" value="Default" />
       <updated>1755087717750</updated>
       <workItem from="1755087719152" duration="352000" />
-      <workItem from="1755151216149" duration="386000" />
+      <workItem from="1755151216149" duration="1647000" />
     </task>
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="3" />
+  </component>
+  <component name="VCPKGProject">
+    <isAutomaticCheckingOnLaunch value="false" />
+    <isAutomaticFoundErrors value="true" />
+    <isAutomaticReloadCMake value="true" />
   </component>
 </project>
